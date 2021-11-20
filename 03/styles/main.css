@@ -1,0 +1,35 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.blue{
+    color: blue;
+}
+.yellow{
+    color: yellow;
+}
+.pink{
+    background-color: pink;
+}
+p{
+    font-size: 18px;
+    font-weight: 100;
+}
+h1{
+    font-size: 24px;
+    font-weight: 900;
+    color: #50aa01;
+}
+a{
+    text-decoration: none;
+    color: rgb(35,127,200);
+}
+
+a:visited{
+    color: green;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: 
+}
