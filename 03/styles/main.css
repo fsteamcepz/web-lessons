@@ -6,7 +6,6 @@ a:visited{
 }
 a:hover{
     color: #be5000;
-    text-decoration: underline;
 }
 a:active{
     color: green;

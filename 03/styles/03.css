@@ -40,7 +40,8 @@ p{
 .pclass{
     color: #666;
     font-size: 14px;
-    font-style: 600;
+    font-style: italic;
+    font-weight: 600;
 }
 .psrift{
     color: #666;
