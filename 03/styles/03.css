@@ -123,3 +123,6 @@ div{
 .blink{
     text-decoration: blink;
 }
+ul{
+    list-style: none;
+}
