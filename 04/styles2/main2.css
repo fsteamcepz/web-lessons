@@ -27,6 +27,8 @@ main{
 img.middle{
     margin: auto;
     vertical-align: middle;
+    width: 400px;
+    height: 200px;
 }
 h1{
     display: inline-block;
@@ -34,7 +36,7 @@ h1{
     color: #11264E;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 45px;
     line-height: 70px;
 }
 h2{
@@ -131,5 +133,4 @@ a:visited{
 }
 a:hover{
     text-decoration: underline;     /* підкреслення посилань */
-    color: blue;
 }
