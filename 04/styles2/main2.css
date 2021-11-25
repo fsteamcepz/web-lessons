@@ -65,6 +65,7 @@ figure{
 
 /* Зображення 1 */
 img.right{
+    object-fit: cover;       /* вписуємо фотографію в область */ 
     margin-top: 30px;
     margin-right: 15px;
     margin-bottom: 0px;
@@ -72,6 +73,7 @@ img.right{
 }
 /* Зображення 2 */
 img.right2{
+    object-fit: cover;       /* вписуємо фотографію в область */ 
     margin-top: 30px;
     margin-right: 25px;
     margin-bottom: 0px;
@@ -79,6 +81,7 @@ img.right2{
 }
 /* Зображення 3 */
 img.right3{
+    object-fit: cover;       /* вписуємо фотографію в область */ 
     margin-top: 30px;
     margin-right: 15px;
     margin-bottom: 0px;
@@ -116,6 +119,7 @@ ul{
 a{
     text-decoration: none;   /* підкреслення посилань */
     margin-right: 5px;
+    color: #F0F2F4;
 }
 li{
     display: inline;
