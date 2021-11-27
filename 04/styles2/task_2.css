@@ -1,0 +1,72 @@
+/* Основний прямокутник */
+.crl {
+    width: 360px;
+    height: 190px;
+
+    display: flex; /* по горизонталі */
+    
+    /* заокруглений квадрат */
+    background-color: white;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightgrey;
+    box-sizing: border-box;
+}
+
+/* Коло */
+.kolo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    margin: 40px 20px 0 20px;
+}
+
+/* Квадрат */
+.kvadrat{
+    width: 200px;
+    height: 160px;
+    
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: lightgrey;
+    box-sizing: border-box;
+
+    margin: 15px 0 0 0;
+}
+li{
+    list-style: none;
+}
+.one{
+    margin-left: 50px;
+    padding-right: 100px;
+    line-height: 50px;
+
+    background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(122,122,122,1) 100%);
+    background-color:lightgray;
+}
+.two{
+    margin-left: 10px;
+    padding-right: 176px;
+    line-height: 30px;
+
+    background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(122,122,122,1) 100%);
+    background-color:lightgray;
+}
+.three{
+    margin-left: 10px;
+    padding-right: 176px;
+    line-height: 30px;
+
+    background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(122,122,122,1) 100%);
+    background-color:lightgray;
+}
+.four{
+    margin-left: 10px;
+    padding-right: 176px;
+    line-height: 30px;
+
+    background: linear-gradient(90deg, rgba(217,217,217,1) 0%, rgba(122,122,122,1) 100%);
+    background-color:lightgray;
+}
