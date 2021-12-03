@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 .card{
     display: inline-block; /* по лінії */
