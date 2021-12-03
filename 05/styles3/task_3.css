@@ -14,12 +14,13 @@
     height: 500px;
     background-color: white;
     border-radius: 18px;
+    margin-bottom: 30px;
 }
-
 .img-cards{
     width: 100%;        /* ширина картинки */
     height: 50%;        /* висота картинки */
     margin-top: 17px;   /* верхній відступ */
+    
 }
 .img-cards2{
     height: 50%;        /* висота картинки */
