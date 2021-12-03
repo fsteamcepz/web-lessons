@@ -1,0 +1,26 @@
+*{
+    font-family: Roboto, sans-serif;
+}
+.container{
+    display: flex;
+    background-color: #243f6c;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    width: 205px;
+    height: 50px;
+    padding: 10px 30px 10px 900px;
+}
+.one{
+    color: white;
+    background-color: #39527a;
+    padding: 10px 10px 10px;
+    margin-left: 20px;
+}
+.two{
+    color: white;
+    background-color: #39527a;
+    padding: 10px 10px 10px 10px;
+}
