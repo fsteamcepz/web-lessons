@@ -4,15 +4,15 @@
 .container{
     display: flex;
     background-color: #243f6c;
-    height: 70px;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
-img{
-    width: 205px;
-    height: 50px;
-    padding: 10px 30px 10px 900px;
+.ones{
+    display: flex;
+    justify-content: space-around;
+    width: 100vh;
+    flex-wrap: nowrap;
 }
 .one{
     color: white;
@@ -24,4 +24,10 @@ img{
     color: white;
     background-color: #39527a;
     padding: 10px 10px 10px 10px;
+}
+.con-img{
+    width: 205px;
+    height: 50px;
+    margin: 10px 0px 10px 0px;
+    flex-wrap: nowrap;
 }
