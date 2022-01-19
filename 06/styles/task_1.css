@@ -38,6 +38,7 @@ legend{
     margin-left: 30px;
     background-color: transparent; /* прозорий фон */
     font-weight: bold;
+    font-variant: small-caps;
 }
 .main{
     display: flex;
