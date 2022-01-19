@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    background-color: #f5f5f7;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+}
+.container{
+    width: 800px;
+    height: 200px;
+
+    background-color: #E2FAFD;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #62DFE2;
+    border-radius: 7px;
+
+    margin-bottom: 20px;
+}
+.container2{
+    width: 800px;
+    height: 250px;
+
+    background-color: #E2FAFD;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #62DFE2;
+    border-radius: 7px;
+
+    margin-bottom: 20px;
+}
+.text{
+    color: #9B5E4E;
+    font-size: 21px;
+    font-weight: bold;
+}
+legend{
+    color: #2ED7E1;
+    margin-left: 30px;
+    background-color: transparent; /* прозорий фон */
+    font-weight: bold;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 60px;
+
+    background-color: #E2FAFD;
+    padding-top: 15px;
+    color: #995B4D;
+}
+label{
+    color: #995B4D;
+    background-color: #E2FAFD;
+}
+textarea, select{
+    width: 300px;
+    border-color: #A2A9AA;
+    border-radius: 3px;
+}
+button{
+    background-color: #E2FAFD;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #9FB8BA;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #995B4D;
+
+    background: rgb(223,249,252);
+    background: linear-gradient(0deg, rgba(223,249,252,1) 0%, rgba(175,226,233,1) 100%);
+}
+ul{
+    list-style: none;
+    background-color: #E2FAFD;
+    margin-left: -10px;
+    margin-top: 2px;
+}
+li{
+    background-color: #E2FAFD;
+}
+input[type=date],input[type=tel], input[type=email], input[type=text], input[type=number]{
+    width: 300px;
+    border-color: #9FB8BA;
+}
