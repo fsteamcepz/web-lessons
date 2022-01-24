@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #3397DB;
+}
+.center{
+    position: absolute;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+form{
+    text-align: center;
+    outline: white;
+    background-color: white;
+    border-radius: 6px;   /* заокруглення */
+}
+h1{
+    margin-top: 0px;
+    padding-top: 50px; /* top, right, bottom, left */
+    color: #757674;
+}
+.textbox{
+    margin: 10px 25px 0 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+    background-color: #ECF0F1;
+    border-radius: 5px;
+}
+.textbox input{
+    text-align: center;
+    outline: none;
+    background: none;
+    border: none;
+    color: #757674;
+
+    font-size: 20px;
+}
+.textbox-btn{
+    margin: 10px 25px 0 25px;  /* top, right, bottom, left */
+    padding-bottom: 12px;
+    padding-top: 12px;
+
+    background-color: #3397DB;
+    border-radius: 5px;
+}
+.textbox-btn input{
+    text-align: center;
+    outline: none;
+    background: none;
+    border: none;
+
+    color: rgba(255,255,255);
+
+    font-size: 20px;
+}
+.underline{
+    padding: 15px 0 20px 0;  /* top, right, bottom, left */
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 15px;
+}
+a{
+    color: #333;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
