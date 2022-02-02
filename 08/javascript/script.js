@@ -15,15 +15,15 @@ function mb_calculation() {
 }
 
 function get_price() {
-    let price = prompt('Введіть ціну товару');
-    let count = prompt('Введіть кількість');
+    let price = +prompt('Введіть ціну товару');
+    let count = +prompt('Введіть кількість');
     let grn = 1000;
     let discount = 0.05;
 
-    if(price.indexOf()){
+    if(isNaN(price)){
         alert(`Помилка, ви ввели символ`);
     }
-    else if(count.indexOf()){
+    if(isNaN(count)){
         alert(`Помилка, ви ввели символ`);
     }
     else if(price < 0){
