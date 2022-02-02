@@ -20,31 +20,27 @@ function get_price() {
     let grn = 1000;
     let discount = 0.05;
 
-    if(isNaN(price)){
+    if(isNaN(price) || isNaN(count)){
         alert(`Помилка, ви ввели символ`);
     }
-    if(isNaN(count)){
-        alert(`Помилка, ви ввели символ`);
-    }
-    else if(price < 0){
-        alert(`Помилка, вартість не може бути від'ємною`);
-    }
-    else if(count < 0){
-        alert(`Помилка, кількість не може бути від'ємною`);
-    }
-    else
-    {
-        if(price <= grn)
-        {
-            console.log(`Вхідні дані: ${price}, ${count}`);
-            console.log(`Вартість товару складає ${count*price} грн.`);
-            alert(`Вартість товару складає ${count*price} грн.`);
+    else{
+        if(price < 0 || count < 0){
+            alert(`Помилка, ви ввели від'ємне число`);
         }
         else
         {
-            console.log(`Вхідні дані: ${price}, ${count}`);
-            console.log(`Чудова новина! Вартість товару  зі знижкою складає ${count*price-(discount * grn)} грн.`);
-            alert(`Чудова новина! Вартість товару  зі знижкою складає  ${count*price-(discount * grn)} грн.`);
+            if(price <= grn)
+            {
+                console.log(`Вхідні дані: ${price}, ${count}`);
+                console.log(`Вартість товару складає ${count*price} грн.`);
+                alert(`Вартість товару складає ${count*price} грн.`);
+            }
+            else
+            {
+                console.log(`Вхідні дані: ${price}, ${count}`);
+                console.log(`Чудова новина! Вартість товару  зі знижкою складає ${count*price-(discount * grn)} грн.`);
+                alert(`Чудова новина! Вартість товару  зі знижкою складає  ${count*price-(discount * grn)} грн.`);
+            }
         }
     }
 }
