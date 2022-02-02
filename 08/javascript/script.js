@@ -5,9 +5,10 @@ function mb_calculation() {
     let mbit = 8;
 
     alert(megabyte + ' MB = ' + megabyte*mbyte + ' бітів.');
-    alert(megabyte + ' MB = ' +  megabyte*gb +' ГБ.');
+    alert(megabyte + ' MB = ' + megabyte*gb +' ГБ.');
     alert(megabyte + ' MB = ' + megabyte*mbit +' Мбіт');
 
+    console.log('Вхідні дані: ' + megabyte);
     console.log(megabyte + ' MB = ' + megabyte*mbyte + ' бітів.');
     console.log(megabyte + ' MB = ' +  megabyte*gb +' ГБ.');
     console.log(megabyte + ' MB = ' + megabyte*mbit +' Мбіт');
@@ -24,10 +25,12 @@ function get_price() {
     }
     else if(price <= grn){
         alert('Вартість товару складає ' + count*price + ' грн.');
+        console.log('Вхідні дані: ' + price + ', ' + count);
         console.log('Вартість товару складає ' + count*price + ' грн.');
     }
     else {
         alert('Чудова новина! Вартість товару  зі знижкою складає ' + (count*price-(discount * grn)) + ' грн.');
+        console.log('Вхідні дані: ' + price + ', ' + count);
         console.log('Чудова новина! Вартість товару  зі знижкою складає ' + (count*price-(discount * grn)) + ' грн.');
     }
 }
