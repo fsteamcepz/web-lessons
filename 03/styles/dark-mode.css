@@ -31,13 +31,13 @@ a:active{
 
     font-family: "Balsamiq Sans", cursive;
     color: var(--clr-neon);
-    background-color: #232529;
+    background: none;
   
     cursor: pointer;
     text-decoration: none;
     color: var(--clr-neon);
     border: var(--clr-neon) 0.125em solid;
-    padding: 0.25em 1em;
+    padding: 6px 20px 11px 20px;
     border-radius: 0.25em;
   
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;

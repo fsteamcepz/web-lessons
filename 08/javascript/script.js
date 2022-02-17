@@ -39,7 +39,7 @@ function get_price() {
             {
                 console.log(`Вхідні дані: ${price}, ${count}`);
                 console.log(`Чудова новина! Вартість товару  зі знижкою складає ${count*price-(discount * grn)} грн.`);
-                alert(`Чудова новина! Вартість товару  зі знижкою складає  ${count*price-(discount * grn)} грн.`);
+                alert(`Чудова новина! Вартість товару  зі знижкою складає ${count*price-(discount * grn)} грн.`);
             }
         }
     }
