@@ -32,13 +32,13 @@ function computerDetails()
             for (let i = 0; i < answer; i++)
             {
                 let id = i + 1;
-                let name = prompt('Введіть назву');
-                let cost = +prompt('Введіть вартість');
-                if(isNaN(cost))
-                {
-                    alert('Ви ввели символ!');
-                    cost = +prompt('Введіть вартість');
-                }
+                let cost, name;
+                let nameCost = prompt('Введіть назву та вартість');
+
+                let words = nameCost.split(' ');
+                name = words[0];                    // знайти останній пропуск
+                cost = words[words.length - 1];
+                
                 mas[i] = createDetail(id, name, cost);
             }
             document.querySelector('.wrap').innerHTML = `<table class="detail"></table>`;
@@ -63,7 +63,7 @@ function computerDetails()
     function minD()
     {
         let min = mas[0].price;
-        for(let i = 1; i < mas.length; i++)
+        for(let i = 0; i < mas.length; i++)
         {
             if(mas[i].price < min)
             {

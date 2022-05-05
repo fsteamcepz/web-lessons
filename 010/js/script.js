@@ -46,22 +46,26 @@ function sumOfNumbers()
 function searchOfEmail()
 {
     let mas = ['s@gmail.com', 'p@.ua', 'masha@ukr.net'];
-    let spl;
-
-    for(let i = 3; i <= mas.length; i++)
+    while(1)
     {
-        mas[i] = prompt('Введіть пошту');
-        if (mas[i] === null)                // Нічого не ввів і натиснув ОК - mas[i] === ''. Число не є цілим - Number.isInteger(+mas[i]) === false
+        let email = prompt('Введіть пошту');
+        if(email === null)
         {
             break;
         }
-        if(mas[i] === mas[i - 3] || mas[i] === mas[i - 2] || mas[i] === mas[i - 1] || mas[i] === mas[i + 1])
+        else
         {
-            alert('Така електронна адреса вже зареєстрована!');
-            i--;
+            // додати перевірку на емейл (регулярні вирази)...
+            if(mas.indexOf(email) === -1)               // або if(!mas.find(element => (element == email)))
+            {
+                mas.push(email);
+            }
+            else
+            {
+                alert('Така електронна адреса вже зареєстрована!');
+            }
         }
     }
-    spl = mas.pop();       // видаляє ', '
-    spl = mas.join(", ");
+    let spl = mas.join(", ");
     alert(`Всі електронні адреси: ${spl}.`);
 }
