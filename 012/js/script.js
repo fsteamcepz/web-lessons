@@ -36,7 +36,9 @@ function computerDetails()
                 let nameCost = prompt('Введіть назву та вартість');
 
                 let words = nameCost.split(' ');
-                name = words[0];                    // знайти останній пропуск
+
+                // знайти останній пропуск
+                name = numberOfPasses(nameCost);
                 cost = words[words.length - 1];
                 
                 mas[i] = createDetail(id, name, cost);
@@ -60,12 +62,43 @@ function computerDetails()
         }
     }
 
+    function numberOfPasses(string)
+    {
+        let str = string;
+        let words = str.split(' ');
+        let count = 0;
+        
+        for(let i = 0; i < str.length; i++)
+        {
+            if(str[i] === " ")
+            {
+                count++;
+            }
+        }
+        
+        let mas = [];
+        
+        for(let j = 0; j < words.length; j++)
+        {
+            if(words[j] === words[count])
+            {
+                break;
+            }
+            else
+            {
+                mas[j] = words[j];
+            }
+        }
+        let spl = mas.join(' ');    // зберігає назву без ком
+        return spl;
+    }
+
     function minD()
     {
         let min = mas[0].price;
         for(let i = 0; i < mas.length; i++)
         {
-            if(mas[i].price < min)
+            if(mas[i].cost < min)
             {
                 min = mas[i].price;
             }

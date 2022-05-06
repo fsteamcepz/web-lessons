@@ -5,8 +5,8 @@ btn.addEventListener("click",function () { changeTheme(); });
 
 function changeTheme()
 {
-    let lightTheme = "03/styles/main.css";
-    let darkTheme = "03/styles/dark-mode.css";
+    let lightTheme = "styles/main.css";
+    let darkTheme = "styles/dark-mode.css";
 
     let currTheme = link.getAttribute("href");
     let theme = "";
