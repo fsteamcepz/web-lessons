@@ -1,26 +1,36 @@
-const btn = document.getElementById("switchMode");
-const link = document.getElementById("main-theme");
+// змінна themeSwitchers отримує всі елементи з класом ".neon-button"
+const themeSwitchers = document.querySelectorAll(".neon-button");
 
-btn.addEventListener("click",function () { changeTheme(); });
-
-function changeTheme()
-{
-    let lightTheme = "styles/main.css";
-    let darkTheme = "styles/dark-mode.css";
-
-    let currTheme = link.getAttribute("href");
-    let theme = "";
-
-    if(currTheme == lightTheme)
+// Додаємо для кожного switcher обробник подій
+themeSwitchers.forEach(switcher =>
     {
-        currTheme = darkTheme;
-   	    theme = "dark-mode";
+        // при натисканні викликається функція, яка повинна отримати назву теми
+        switcher.addEventListener(
+            "click",
+            function()
+            {
+                // alert(this.dataset.theme);  - перевірка, яка зараз тема
+                applyTheme(this.dataset.theme);
+                localStorage.setItem("name", this.dataset.theme);
+            });
+    });
+
+    // Функція буде створювати шлях до файлу теми і вставляти його в Head
+    function applyTheme(themeName)
+    {
+        let themeUrl = `styles/${themeName}-mode.css`;
+        // alert(themeUrl);  - перевірка, який зараз URL-адрес теми
+        document.querySelector('[title="name"]').setAttribute("href", themeUrl);    // шукаємо елемент '', з [title="name"], і вставляємо в themeUrl
+    }
+
+    // зберігаємо вибрану тему у браузері
+    let activeTheme = localStorage.getItem("name");
+
+    if(activeTheme === null || activeTheme === "light")
+    {
+        applyTheme("light");
     }
     else
-    {    
-   	    currTheme = lightTheme;
-   	    theme = "main";
+    {
+        applyTheme("dark");
     }
-
-    link.setAttribute("href", currTheme);
-}

@@ -23,7 +23,7 @@ a:active{
 
 /* Неоновая кнопка*/
 .neon-button{
-    position: absolute;
+    position: fixed;     /* щоб завжи був на екрані при скролі */
     right: 20px;
     top: 20px;
     font-size: 20px;
@@ -57,14 +57,21 @@ a:active{
     z-index: -1;
     transition: opacity 100ms linear;
 }
-.neon-button:hover, .neon-button:focus{
+.neon-button:hover{
     color: #E2E3E7;
     text-shadow: none;
     background-color: var(--clr-neon);
 }
-.neon-button:hover::after, .neon-button:focus::after{
+.neon-button:hover::after{
     opacity: 1;
 }
-.neon-button:hover::before, .neon-button:focus::before{
+.neon-button:hover::before{
     opacity: 1;
+}
+
+.neon-button[data-theme="light"]{
+    display: none;
+}
+.neon-button[data-theme="dark"]{
+    display: block;
 }

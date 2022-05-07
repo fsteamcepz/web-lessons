@@ -1,21 +1,21 @@
 :root{
-    --clr-neon: hsl(317 100% 54%);
-    --clr-bg: hsl(323 21% 16%);
+    --clr-neon: rgb(0,113,227);
+    --clr-bg: rgb(9,10,38);
 }
 body{
-    background-color: #232529;
-    color: #E2E3E7;
+    background-color: #E2E3E7;
+    color: #232529;
 }
 
 a{
     text-decoration: none;
-    color: #84A0EF;
+    color: rgb(0,113,227);
 }
 a:visited{
-    color: #84A0EF;
+    color: #FE6579;
 }
 a:hover{
-    color: #E3796A;
+    color: #ff00ff;
 }
 a:active{
     color: green;
@@ -23,15 +23,15 @@ a:active{
 
 /* Неоновая кнопка*/
 .neon-button{
-    position: fixed;
+    position: fixed;     /* щоб завжи був на екрані при скролі */
     right: 20px;
     top: 20px;
     font-size: 20px;
-    font-weight: 600;
 
     font-family: "Balsamiq Sans", cursive;
     color: var(--clr-neon);
     background: none;
+    font-weight: 600;
   
     cursor: pointer;
     text-decoration: none;
@@ -41,6 +41,7 @@ a:active{
     border-radius: 0.25em;
   
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  
     box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
 }
 .neon-button::after{
@@ -57,7 +58,7 @@ a:active{
     transition: opacity 100ms linear;
 }
 .neon-button:hover{
-    color: var(--clr-bg);
+    color: #E2E3E7;
     text-shadow: none;
     background-color: var(--clr-neon);
 }
@@ -66,11 +67,4 @@ a:active{
 }
 .neon-button:hover::before{
     opacity: 1;
-}
-
-.neon-button[data-theme="dark"]{
-    display: none;
-}
-.neon-button[data-theme="light"]{
-    display: block;
 }
