@@ -12,13 +12,15 @@ a{
     color: #84A0EF;
 }
 a:visited{
-    color: #84A0EF;
+    color: #03A66F;
 }
 a:hover{
     color: #E3796A;
 }
 a:active{
-    color: green;
+    background: linear-gradient(45deg, #F2BF00 33%, #0D61BC 66%, #84A0EF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Неоновая кнопка*/
