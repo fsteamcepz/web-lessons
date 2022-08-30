@@ -19,7 +19,7 @@ themeSwitchers.forEach(switcher =>
     function applyTheme(themeName)
     {
         let themeUrl = `styles/${themeName}-mode.css`;
-        // alert(themeUrl);  - перевірка, який зараз URL-адрес теми123
+        // alert(themeUrl);  - перевірка, який зараз URL-адрес теми
         document.querySelector('[title="name"]').setAttribute("href", themeUrl);    // шукаємо елемент '', з [title="name"], і вставляємо в themeUrl
     }
 
