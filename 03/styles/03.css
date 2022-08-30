@@ -1,0 +1,128 @@
+*{
+    font-family: Roboto;
+}
+h1{
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h2{
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+h3{
+    color: #000;
+    font-weight: bold;
+}
+p{
+    color: #666;
+    font-size: 14px;
+}
+.red{
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+.bold{
+    font-weight: bold;
+    font-size: 14px;
+}
+.thin{
+    font-weight: 100;
+    font-size: 14px;
+}
+.max{
+    font-weight: 900;
+    font-size: 14px;
+}
+.pclass{
+    color: #666;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+}
+.psrift{
+    color: #666;
+    font-size: 12px;
+}
+.psrifthello{
+    color: #666;
+    font-size: 20px;
+}
+div{
+    width: 600px;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.normal{
+    font-style: normal;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+.serif{
+    font-family: Times, Times New Roman, Georgia, serif;
+}
+.sansserif{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.monospace{
+    font-family: Lucida Console, Courier, monospace;
+}
+
+.name{
+    color: green;
+}
+.hex{
+    color: #F12668;
+}
+.rgb{
+    color: rgb(72, 102, 157);
+}
+.rgba{
+    color: rgba(72, 102, 157, 0.45);
+}
+.hsl{
+    color: hsl(0, 100%, 30%);
+}
+.hsla{
+    color: hsla(0, 60%, 77%, 0.7);
+}
+.up{
+    text-transform: uppercase;
+}
+.low{
+    text-transform: lowercase;
+}
+.cap{
+    text-transform: capitalize;
+}
+
+.underline{
+    text-decoration: underline blue;
+}
+.overline{
+    text-decoration: wavy overline yellow;
+}
+.through{
+    text-decoration: line-through;
+}
+.none{
+    text-decoration: none;
+}
+.blink{
+    text-decoration: blink;
+}
+ul{
+    list-style: none;
+}

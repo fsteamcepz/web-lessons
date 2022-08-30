@@ -1,0 +1,67 @@
+/* Перший блок */
+.one{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 30px;
+    
+    border-left: 4px double black;
+    border-right: 7px solid blue;
+    border-top: 7px dotted green;
+    border-bottom: 3px red dashed;
+}
+.left{
+    padding-left: 18px;
+    font-size: 18px;
+    line-height: 39px;
+}
+
+/* Другий блок */
+.two{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 2px red solid;
+}
+.center{
+    font-size: 18px;
+    padding-left: 150px;
+    line-height: 40px;
+}
+
+/* Третій блок */
+.three{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 30px;
+
+    border-left: 10px solid rgb(77,153,255);
+    background-color:rgb(219,254,254);
+}
+.blue{
+    font-size: 18px;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+/* Четвертий блок */
+.four{
+    width: 400px;
+    height: 40px;
+    
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 8px 5px 8px rgba(0,0,0,0.2); /* <зсув по x> <зсув по y> <радіус розмиття> <розтягування> */
+    
+}
+.cursor{
+    font-size: 18px;
+    padding-left: 20px;
+    line-height: 40px;
+}
+.four:hover{
+    background-color: rgb(77,153,255);
+    color: white;
+}

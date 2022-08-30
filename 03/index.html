@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створення стилів тексту</title>
+    <link rel="stylesheet" href="styles/03.css">
+</head>
+<body>
+    <h1>основні властивості css для роботи з текстом</h1>
+
+    <!--Блок властивість font-size-->
+    <h2>Властивість font-size</h2>
+
+    <p>Властивість <span class="red">font-size</span> змінює розмір шрифта.</p>
+    <p>Розмір шрифту задається за допомогою значення та одиниць виміру (<span class="red">em, px, pt, %</span>)</p>   
+
+    <h3>Синтаксис:</h3>
+
+    <p><span class="pclass">CSS</span></p>
+
+    <div>
+        <code>
+            <span class="psrift">
+                p{<br>
+                    font-size: 20px;<br>
+                }
+            </span>
+        </code>
+        
+    </div>
+
+    <p><span class="pclass">HTML</span></p>
+
+    <div>
+        <code>
+            <span class="psrift">
+                &lt;p&gt;Hello, world!&lt;/p&gt;
+            </span>
+        </code>
+    </div>
+
+    <h3>Результат:</h3>
+
+    <div>
+        <p><span class="psrifthello">Hello, world!</span></p>
+    </div>
+
+    <!--Блок властивість font-weight-->
+    <h2>Властивість font-weight</h2>
+    
+    <p>Властивість <span class="red">font-weight</span> встановлює насиченість шрифту.</p>
+    <p>Може приймати наступні значення:
+        <ul>
+            <li><span class="red">normal</span> - нормальна насиченість, те саме, що і <span class="red">400</span></li>
+            <li><span class="red">bold</span> - напівжирний текст, те саме, що і <span class="red">700</span></li>
+            <li><span class="red">lighter</span> - змінює насиченість відносно бітьківського стилю в меншу сторону</li>
+            <li><span class="red">bolder</span> - змінює насиченість відносно бітьківського стилю в більшу сторону</li>
+            <li><span class="red">100,200,300,400,500,600,700,800,900</span> - цифрові значення насиченості, які відрізняються від стандартних</li>
+        </ul>
+    </p>
+
+    <h3>Синтаксис:</h3>
+
+    <p><span class="pclass">CSS</span></p>
+
+    <div>
+        <code>
+            <span class="psrift">
+                .bold{<br>
+                    font-weight: bold;<br>
+                }<br>
+                .thin{<br>
+                    font-weight: 100;<br>
+                }<br>
+                .max{<br>
+                    font-weight: 900;<br>
+                }
+            </span>
+        </code>
+    </div>
+
+    <p><span class="pclass">HTML</span></p>
+
+    <div>
+        <code>
+            <span class="psrift">
+                &lt;p&gt;<br>
+                &lt;span class = "bold"&gt;Напівжирний текст&lt;/span&gt;<br>
+                &lt;span class = "thin"&gt;найтонший текст&lt;/span&gt;<br>
+                &lt;span class = "max"&gt;найтовщий текст&lt;/span&gt;<br>
+                &lt;/p&gt;
+            </span>
+        </code>
+    </div>
+
+    <h3>Результат:</h3>
+    
+    <div>
+        <p>
+            <code>
+                <span class="psrift">
+                    <span class = "bold">Напівжирний текст,</span>
+                    <span class = "thin">найтонший текст,</span>
+                    <span class = "max">найтовщий текст.</span>
+                </span>
+            </code>
+        </p>
+    </div>
+
+    <!--Блок властивість font-style-->
+    <h2>Властивість font-style</h2>
+
+    <p>Властивість <span class="red">font-style</span> визначає, яким чином шрифт повинен бути стилізований, чи це normal, italic, або oblique.</p>
+    <p>Може приймати наступні значення:
+        <ul>
+            <li><span class="red">normal</span> - виділяє шрифт, який класифікований як <span class="red">нормальний</span></li>
+            <li><span class="red">italic</span> - виділяє шрифт курсивом. Якщо не доступна курсивна версія шрифту, для заміни використовується <span class="red">oblique</span> класифікація</li>
+            <li><span class="red">oblique</span> - виділяє шрифт косим. Якщо не доступна коса версія шрифту, для заміни використовується <span class="red">italic</span> класифікація</li>
+        </ul>
+    </p>   
+
+    <h3>Синтаксис:</h3>
+
+    <p><span class="pclass">CSS</span></p>
+
+    <div>
+        <code>
+            <span class="psrift">
+                .normal {<br>
+                    font-style: normal;<br>
+                  }<br>
+                  .italic {<br>
+                    font-style: italic;<br>
+                  }<br>
+                  .oblique {<br>
+                    font-style: oblique;<br>
+                  }
+            </span>
+        </code>
+        
+    </div>
+
+    <p><span class="pclass">HTML</span></p>
+
+    <div>
+        <code>
+            <span class="psrift">
+                &lt;span class = "normal"&gt;Цей абзац нормальний&lt;/span&gt;<br>
+                &lt;span class = "italic"&gt;Цей абзац виділено курсивом&lt;/span&gt;<br>
+                &lt;span class = "oblique"&gt;Цей абзац є косим&lt;/span&gt;
+            </span>
+        </code>
+    </div>
+
+    <h3>Результат:</h3>
+
+    <div>
+        <p><span class="normal">Цей абзац нормальний.</span></p>
+        <p><span class="italic">Цей абзац виділено курсивом.</span></p>
+        <p><span class="oblique">Цей абзац є косим.</span></p>
+    </div>
+
+    <!--Блок властивість font-family-->
+    <h2>Властивість font-family</h2>
+
+    <p>Властивість <span class="red">font-family</span> визначає список шрифтів у пріоритеті від найвищого до нижчого.</p>
+    <p>
+        Може приймати наступні значення:
+        <ul>
+            <li><span class="red">serif</span> - гліфи мають завершальні штрихи, що розширюються або звужуються кінці</li>
+            <li><span class="red">sans-serif</span> - гліфи мають гладкі закінчення</li>
+            <li><span class="red">monospace</span> - усі гліфи мають однакову фіксовану ширину</li>
+        </ul>
+    </p>   
+
+    <h3>Синтаксис:</h3>
+
+    <p><span class="pclass">CSS</span></p>
+
+    <div>
+        <code>
+            <span class="psrift">
+                .serif {<br>
+                    font-family: Times, Times New Roman, Georgia, serif;<br>
+                }<br>
+                .sansserif {<br>
+                    font-family: Verdana, Arial, Helvetica, sans-serif;<br>
+                }<br>
+                .monospace {<br>
+                    font-family: Lucida Console, Courier, monospace;<br>
+                }
+            </span>
+        </code>
+        
+    </div>
+
+    <p><span class="pclass">HTML</span></p>
+
+    <div>
+        <code>
+            <span class="psrift">
+                &lt;span class = "serif"&gt;Це приклад шрифту serif&lt;/span&gt;<br>
+                &lt;span class = "sansserif"&gt;Це приклад шрифту sans-serif&lt;/span&gt;<br>
+                &lt;span class = "monospace"&gt;Це приклад шрифту monospace&lt;/span&gt;
+            </span>
+        </code>
+    </div>
+
+    <h3>Результат:</h3>
+
+    <div>
+        <p><span class="serif">Це приклад шрифту serif</span></p>
+        <p><span class="sansserif">Це приклад шрифту sans-serif</span></p>
+        <p><span class="monospace">Це приклад шрифту monospace</span></p>
+    </div>
+
+    <!--Блок властивість color-->
+    <h2>Властивість color</h2>
+
+    <p>Властивість <span class="red">color</span> змінює колір шрифта.</p>
+    <p>Ця властивість може приймати як однорідний колір так і прозорість, але на відміну від зображень не може бути градієнтом.</p>
+    <p>Може приймати наступні значення:
+        <ul>
+            <li><span class="red">color</span> - колір тексту</li>
+            <li><span class="red">initial</span> - встановлює властивість у значення без задання</li>
+            <li><span class="red">inherit</span> - вказує на спадковість властивості від свого батьківського елемента</li>
+            <li><span class="red">transparent</span> - робить текст прозорим (невидимим)</li>
+        </ul>
+    </p>   
+    
+    <h3>Синтаксис:</h3>
+    
+    <p><span class="pclass">CSS</span></p>
+    
+    <div>
+        <code>
+            <span class="psrift">
+                .name{<br>
+                    color: green;<br>
+                }<br>
+                .hex{<br>
+                    color: #F12668;<br>
+                }
+                .rgb{<br>
+                    color: rgb(72, 102, 157);<br>
+                }<br>
+                .rgba{<br>
+                    color: rgba(72, 102, 157, 0.45);<br>
+                }<br>
+                .hsl{<br>
+                    color: hsl(0, 100%, 30%);<br>
+                }<br>
+                .hsla{<br>
+                    color: hsla(0, 60%, 77%, 0.7);<br>
+                }
+            </span>
+        </code>
+    </div>
+    
+    <p><span class="pclass">HTML</span></p>
+    
+    <div>
+        <code>
+            <span class="psrift">
+                &lt;p class="name"&gt;green&lt;/p&gt;<br>
+                &lt;p class="hex"&gt;#F12668&lt;/p&gt;<br>
+                &lt;p class="rgb"&gt;rgb(72, 102, 157)&lt;/p&gt;<br>
+                &lt;p class="rgba"&gt;rgba(72, 102, 157, 0.45)&lt;/p&gt;<br>
+                &lt;p class="hsl"&gt;hsl(0, 100%, 30%)&lt;/p&gt;<br>
+                &lt;p class="hsla"&gt;hsla(0, 60%, 77%, 0.7)&lt;/p&gt;
+            </span>
+        </code>
+    </div>
+    
+    <h3>Результат:</h3>
+    
+    <div>
+        <p class="name">green</p>
+        <p class="hex">#F12668</p>
+        <p class="rgb">rgb(72, 102, 157)</p>
+        <p class="rgba">rgba(72, 102, 157, 0.45)</p>
+        <p class="hsl">hsl(0, 100%, 30%)</p>
+        <p class="hsla">hsla(0, 60%, 77%, 0.7)</p>
+    </div>
+    
+    <!--Блок властивість text-transform-->
+    <h2>Властивість text-transform</h2>
+
+    <p>Властивість <span class="red">text-transform</span> визначає, якими літерами буде відображено текст - ВЕЛИКИМИ, малими або Кожне Слово З Великої Літери..</p>
+    <p>Може приймати наступні значення:
+        <ul>
+            <li><span class="red">none</span> - регіст символів не буде змінено</li>
+            <li><span class="red">capitalize</span> - перший символ кожного слова в реченні буде заголовним</li>
+            <li><span class="red">uppercase</span> - всі символи тексту стають великими (верхній регістр)</li>
+            <li><span class="red">lowercase</span> - всі символи тексту стають малими (нижній регістр)</li>
+        </ul>
+    </p>   
+    
+    <h3>Синтаксис:</h3>
+    
+    <p><span class="pclass">CSS</span></p>
+    
+    <div>
+        <code>
+            <span class="psrift">
+                .up{<br>
+                    text-transform: uppercase;<br>
+                }<br>
+                .low{<br>
+                    text-transform: lowercase;<br>
+                }<br>
+                .cap{<br>
+                    text-transform: capitalize;<br>
+                }
+            </span>
+        </code>
+    </div>
+        
+    <p><span class="pclass">HTML</span></p>
+        
+    <div>
+        <code>
+            <span class="psrift">
+                &lt;p class="up"&gt;Я просто текст, нічого незвичного&lt;/p&gt;<br>
+                &lt;p class="low"&gt;Я просто текст, нічого незвичного&lt;/p&gt;<br>
+                 &lt;p class="cap"&gt;Я просто текст, нічого незвичного&lt;/p&gt;
+            </span>
+        </code>
+    </div>
+        
+    <h3>Результат:</h3>
+        
+    <div>
+        <p class="up">Я просто текст, нічого незвичного</p>
+        <p class="low">Я просто текст, нічого незвичного</p>
+        <p class="cap">Я просто текст, нічого незвичного</p>
+    </div>
+
+    <!--Блок властивість text-decoration-->
+    <h2>Властивість text-decoration</h2>
+
+    <p>Властивість <span class="red">text-decoration</span> визначає оздоблення тексту.</p>
+    <p>Може приймати наступні значення:
+        <ul>
+            <li><span class="red">none</span> - звичайний текст</li>
+            <li><span class="red">underline</span> - підкреслений текст</li>
+            <li><span class="red">overline</span> - лінія над текстом</li>
+            <li><span class="red">line-through</span> - закреслений текст</li>
+            <li><span class="red">blink</span> - блимання тексту (не підтримується всіма браузерами)</li>
+        </ul>
+    </p>    
+    
+    <h3>Синтаксис:</h3>
+    
+    <p><span class="pclass">CSS</span></p>
+    <div>
+        <code>
+            <span class="psrift">
+                .underline{<br>
+                    text-decoration: underline red;<br>
+                }<br>
+                .overline{<br>
+                    text-decoration: wavy overline lime;<br>
+                }<br>
+                .through{<br>
+                    text-decoration: line-through;<br>
+                }<br>
+                .none{<br>
+                    text-decoration: none;<br>
+                }<br>
+                .blink{<br>
+                    text-decoration: blink;<br>
+                }
+            </span>
+        </code>     
+    </div>
+    
+    <p><span class="pclass">HTML</span></p>
+    
+    <div>
+        <code>
+            <span class="psrift">
+                &lt;p class="underline"&gt;Текст підкреслений синім кольором&lt;/p&gt;<br>
+                &lt;p class="overline"&gt;Текст, а над ним лінія&lt;/p&gt;<br>
+                &lt;p class="through"&gt;Перекреслений текст&lt;/p&gt;<br>
+                &lt;p&gt;Це &lt;a class="none" href="#"&gt;посилання не підкреслено&lt;/a&gt;, а має бути за замовчуванням.&lt;/p&gt;<br>
+                &lt;p class="blink"&gt;Цей текст блимає. Але це залежить від того, чи підртримує цю властивість твій браузер...&lt;/p&gt;
+            </span>
+        </code>
+    </div>
+    
+    <h3>Результат:</h3>
+    
+    <div>
+        <p class="underline">Текст підкреслений синім кольором</p>
+        <p class="overline">Текст, а над ним лінія</p>
+        <p class="through">Перекреслений текст</p>
+        <p>Це <a class="none" href="#">посилання не підкреслено</a>, а має бути за замовчуванням.</p>
+        <p class="blink">Цей текст блимає. Але це залежить від того, чи підртримує цю властивість твій браузер...</p>
+    </div>
+</body>
+</html>

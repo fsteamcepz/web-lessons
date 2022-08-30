@@ -1,0 +1,36 @@
+*{
+    font-family: Roboto, sans-serif;
+}
+.container{
+    display: flex;
+    background-color: #243f6c;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.ones{
+    display: flex;
+    justify-content: space-around;
+    width: 100vh;
+    flex-wrap: nowrap;
+}
+.one{
+    color: white;
+    background-color: #39527a;
+    padding: 10px 10px 10px;
+    margin-left: 20px;
+}
+.two{
+    color: white;
+    background-color: #39527a;
+    padding: 10px 10px 10px 10px;
+}
+.con-img{
+    display: flex;
+    justify-content: space-between;
+    width: 205px;
+    height: 50px;
+    margin: 10px 10px 10px 10px;
+    
+    flex-wrap: nowrap;
+}

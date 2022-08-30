@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створення форм</title>
+    <link rel="stylesheet" href="styles/task_1.css">
+</head>
+<body>
+
+    <form action="#">
+        <p class="text">Анкета вiдвiдувача ресторану</p>
+
+        <!-----------1----------->
+        <fieldset class="container">
+            <legend>Контакти</legend>
+            <div class="main">
+                <label for="username">Ім'я</label>
+                <input type="text", id="username">
+            </div>
+
+            <div class="main">
+                <label for="telephone">Телефон</label>
+                <input type="tel", id="telephone">
+            </div>
+
+            <div class="main">
+                <label for="email">Email</label>
+                <input type="email", id="email">
+            </div>
+
+            <div class="main">
+                <label for="Date of visit">Дата відвідування</label>
+                <input type="date", id="Date of visit">
+            </div>
+        </fieldset>
+
+        <!-----------2----------->
+        <fieldset class="container">
+            <legend>Персональна інформація</legend>
+            <div class="main">
+                <label for="age">Вік</label>
+                <input type="number" min="1", max="122", id="age">
+            </div>
+
+            <div class="main">
+                <label for="Favorite cuisine">Улюблена кухня</label>
+                <select>
+                    <option value="1">Італійська</option>
+                    <option value="2">Українська</option>
+                    <option value="3">Іспанська</option>
+                    <option value="4">Французька</option>
+                    <option value="5">НІмецька</option>
+                    <option value="6">Японська</option>
+                </select>
+            </div>
+
+            <div class="main">
+                <label for="New dishes">Які страви ви хотіли би бачити в нашому меню?</label>
+                <textarea name="comment" id="New dishes" cols="30" rows="4"></textarea>
+            </div>
+        </fieldset>
+
+        <!-----------3----------->
+        <fieldset class="container2">
+            <legend>Оцінка ресторану</legend>
+
+            <label for="Restaurant awareness">
+                Як ви дізналися про наш ресторан?
+            </label>
+            <ul>
+                <li><input type="radio" name="item" value="l1">Поруч з будинком/роботою</li>
+                <li><input type="radio" name="item" value="l2">Реклама</li>
+                <li><input type="radio" name="item" value="l3">Порадили знайомі</li>
+                <li><input type="radio" name="item" value="l4">Пошук в мережі Інтернет</li>
+                <li><input type="radio" name="item" value="l5">Інше</li>
+            </ul>
+            
+            <label for="Favorite cuisine">
+                Чи будете ви рекомендувати наш ресторан знайомим?
+            </label>
+            
+            <ul>
+                <li><input type="radio" name="yes" value="1" checked>Так</li>
+                <li><input type="radio" name="no" value="2">Ні</li>
+            </ul>
+        </fieldset>
+
+        <button name="send">
+            Відправити
+        </button>
+
+    </form>
+
+</body>
+</html>

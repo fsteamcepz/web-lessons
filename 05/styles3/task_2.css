@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    width: 715px;
+    height: 250px;
+    justify-content: space-around;
+
+    background-color: #f2f4f5;
+}
+.dec{
+    display: flex;
+    flex-direction: column;         /* іконки стовпецем */
+    justify-content: space-around;  /* іконки по центру осі */
+    height: 250px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.line{
+    display: flex;
+    height: 221px;
+    border-right: 1px solid black;
+
+    margin-top: 14px;
+    margin-right: 20px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100px;
+}
+.text_bot{
+    margin-bottom: 10px;
+    width: 583px;
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
